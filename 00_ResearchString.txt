@@ -1,0 +1,4 @@
+Research String
+
+USV and (guidance or path planning or COLREGS)
+usv AND (guidance OR (path AND planning) OR colreg)

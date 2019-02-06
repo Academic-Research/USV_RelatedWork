@@ -1,0 +1,17 @@
+* General Notes
+- Obstacle classification (i.e. static, dynamic, geographical or other vessel)
+
+
+* About USV autonomy
+
+- We search for autonomous systems because we want systems to be less reliant on human interactions and subject to human error.
+- It is estimated that human error contributes to between 89% and 96% of marine collisions.
+
+* Campbell2012Review
+
+- USV autonomy challengs -> automatic obstacle avoidance and conformance with the COLREGS
+- USV Master Plan: US Navy doc with objectives in order to increase USVs mission diversity and autonomy
+- Navigation, Guidance, Control, and Motion
+- Motion planning
+- A recent review of close-range collision avoidance (Tam et al., 2009) gives a chronological account of approaches ta- ken to the guidance problem and discusses related studies which tackle path planning with regard to collision avoidance. The authors did not discuss unmanned vehicles, but rather focussed on increasing the autonomy of manned craft to avoid human error during navigation when executing COLREGs.
+
