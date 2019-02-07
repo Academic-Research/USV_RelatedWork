@@ -1,6 +1,45 @@
 * General Notes
 - Obstacle classification (i.e. static, dynamic, geographical or other vessel)
+- Guidance 
+--- Reasoner. Must define the adequate behaviour based on the known information about the world
+--- Line-of-Sight, 
+--- Lyapunov
+--- vision
+--- potential fields
+--- Evolutionary Algorithms such as Genetic Algorithms (GAs) (Hong Qu et al., 2005) or Ant Colony Optimisation (ACO) (Zeng et al., 2009)
+- USV control is generally done through regulation of the USV heading using PID control
 
+* USV Desirede Features
+- Obatacle and collision avoidance
+- Detect objects, categorize (class of obeject and vessels) them and predict velocity and position
+- Create a kwnowledge database about the world (e.g. 2 fishing vessel, 1 iland, 1 continent, 2 USV, humans, ...)
+- Automatic docking and launch system
+
+* USV modules
+- Guidance
+--- Map representation
+- Navigation
+- Control
+-- Compensation of disturabances detected by the state stimation module
+-- Depends upon the USV dynamic model (mathemathical)
+- Perception
+--- Obstacle detection
+--- Obstacle classification
+- Predicition modules
+- Collision Detection and Avoidance
+--- Collision detection (receives information from the prediction module)
+--- Collision Avoidance
+- State estimation module
+-- Waves
+-- Wind
+
+* USV hardware components
+- DGPS is a more expensive, enhanced version of GPS which uses known reference stations to apply a correction factor and give positional accuracy within 1–10 m.
+- Radar sensors with an Automatic Radar Plotting Aid (ARPA) for obstacle, vessel, land- mark or coastline detection. This system is capable of measuring the proximity of an object and its relative velocity to the observer.
+- Ideally the vision system should positively identify the class of ob- ject (with the aid of an Automatic Identification System (AIS))
+- Radas
+- Monocular and Stereo vision
+- 
 
 * About USV autonomy
 
@@ -14,4 +53,7 @@
 - Navigation, Guidance, Control, and Motion
 - Motion planning
 - A recent review of close-range collision avoidance (Tam et al., 2009) gives a chronological account of approaches ta- ken to the guidance problem and discusses related studies which tackle path planning with regard to collision avoidance. The authors did not discuss unmanned vehicles, but rather focussed on increasing the autonomy of manned craft to avoid human error during navigation when executing COLREGs.
+- 
+
+
 
