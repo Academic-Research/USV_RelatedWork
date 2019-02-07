@@ -1,17 +1,120 @@
 * General Notes
 - Obstacle classification (i.e. static, dynamic, geographical or other vessel)
+- Guidance 
+--- Reasoner. Must define the adequate behaviour based on the known information about the world
+--- Line-of-Sight, 
+--- Lyapunov
+--- vision
+--- potential fields
+--- Evolutionary Algorithms such as Genetic Algorithms (GAs) (Hong Qu et al., 2005) or Ant Colony Optimisation (ACO) (Zeng et al., 2009)
+--- Virtual Field Forces (MVFFs), in addition to fuzzy expert rule based logic (Lee et al., 2004). However, the complete system incor- porates over 200 fuzzy rules and presents only single encounter scenarios.
+--- Interval Programming Benjamin2006Method (Partially COLREGS-compliant)
+--- modified A⁄ (Casalino et al., 2009)
+--- ACO (Tsou and Hseuh, 2010)
+--- trajectory selection according to a multi-stage selection process which considers a range of criteria in terms of safety and performance (Tan et al., 2010).
+--- Motion planning
+------ Setpoint regulation
+------ Path Following
+------ Trajectory Following
+------ Manoeuvering
+- USV control is generally done through regulation of the USV heading using PID control
+- Local guidance using potential fields (good for real-time)
 
+
+* USV Desirede Features
+- Obatacle and collision avoidance
+- Detect objects, categorize (class of obeject and vessels) them and predict velocity and position
+- Create a kwnowledge database about the world (e.g. 2 fishing vessel, 1 island, 1 continent, 2 USV, humans, ...)
+- Automatic docking and launch system
+
+* USV modules
+- Guidance
+--- Map representation
+- Navigation
+- Control
+-- Compensation of disturabances detected by the state stimation module
+-- Depends upon the USV dynamic model (mathemathical)
+- Perception
+--- Obstacle detection
+--- Obstacle classification
+- Predicition modules
+- Collision Detection and Avoidance
+--- Collision detection (receives information from the prediction module)
+--- Collision Avoidance
+- State estimation module
+-- Waves
+-- Wind
+
+* USV hardware components
+- DGPS is a more expensive, enhanced version of GPS which uses known reference stations to apply a correction factor and give positional accuracy within 1–10 m.
+- Radar sensors with an Automatic Radar Plotting Aid (ARPA) for obstacle, vessel, land- mark or coastline detection. This system is capable of measuring the proximity of an object and its relative velocity to the observer.
+- Ideally the vision system should positively identify the class of ob- ject (with the aid of an Automatic Identification System (AIS))
+- Radas
+- Monocular and Stereo vision
+- 
 
 * About USV autonomy
-
 - We search for autonomous systems because we want systems to be less reliant on human interactions and subject to human error.
 - It is estimated that human error contributes to between 89% and 96% of marine collisions.
 
 * Campbell2012Review
-
 - USV autonomy challengs -> automatic obstacle avoidance and conformance with the COLREGS
 - USV Master Plan: US Navy doc with objectives in order to increase USVs mission diversity and autonomy
 - Navigation, Guidance, Control, and Motion
 - Motion planning
-- A recent review of close-range collision avoidance (Tam et al., 2009) gives a chronological account of approaches ta- ken to the guidance problem and discusses related studies which tackle path planning with regard to collision avoidance. The authors did not discuss unmanned vehicles, but rather focussed on increasing the autonomy of manned craft to avoid human error during navigation when executing COLREGs.
+- A recent review of close-range collision avoidance (Tam et al., 2009) gives a chronological account of approaches taken to the guidance problem and discusses related studies which tackle path planning with regard to collision avoidance. The authors did not discuss unmanned vehicles, but rather focussed on increasing the autonomy of manned craft to avoid human error during navigation when executing COLREGs.
+- 
+
+* Motion planning
+--- Setpoint regulation
+    --- Most of the path planning methods produce inexecutable paths, they are not foccused on geenrate smooth path resulting in straight lines joining waypoints
+    --- Waypoint path planning
+    --- Ant Colony Optimisation (Zeng et al., 2009)
+    --- PSO (Particle Swarm Optimisation) (Li et al., 2006)
+    --- A*
+        --- Iterative Deepening A* (reduces the memory effort by retaining information about one path only at a time)
+    --- D* Search Algorithm (Stentz, 1995)((Ferguson et al., 2005)
+    --- Foccused D* 
+    --- D*-Lite (Koenig and Likhachev, 2005)
+    --- ARA* (The Anytime Repairing A*)
+    --- AD* (Anytime Dynamic A*) Likhachev et al. (2005)
+    --- Homotopic A* (HA⁄) (Hernández et al., 2011)
+    --- HPA* (Hierarchical Path-Finding A*) is one worthy of mention, which aims to improve the responsiveness of traditional algorithms in large, complex maps (Botea et al., 2004). Data is stored hierarchically, from low-level to high-level planning. Information is never discarded, but is cached and reused to reduce computation.
+    --- Direction Priority Sequential Selection Algorithm (DPSS) which has demonstrated more favourable paths than A*, with better efficiency (Yang et al., 2010) (Smooth)
+--- Path Following
+    --- Splines for smooth path between waypoints
+        --- Spline or polynomial interpolation (Fossen, 2011)
+    --- Cubic Hermite interpolation for smooth path
+    --- Pythagorean hodographs with cur- vature constraints placed on the waypoints (Farouki and Sakkalis, 1990)
+    --- LOS (straight line between waypoints)
+--- Trajectory Following
+--- Manoeuvering
+
+* Evolutionary Algorithms
+- Applied to path planning
+- Used to address multi-objective optimisation instead of the use of gradient descent for exemple that is a more complex and demands more computational effort.
+- The problem is that can get stucked on local minima (finding a near-optimal solution) or even failing to find a solution at all in some instances so it should not be avoid for both global and local path planning.
+
+* Best-first searches (e.g. A*)
+- Large computational memory required
+
+* Spline for path smoothness
+- A cubic spline is a third order polynomial
+
+* Collision risk assessment
+- CPA (Closest Point of Approach)
+- TCPA (Time to the CPA)
+- PAD (Projected Area of Danger)
+- CA (Circle of Avoidance)
+- CSC (Critical Safety Circle)
+
+* COLREGS
+- Heuristics methods
+    - Repair global path
+        --- The resulting path will require the incorporation of dynamics to generate a viable path using Dubins, Clothoids and Pythagorean Hodograph methods for example for generation of viable smooth paths
+    - decision-making module determine COLREGS encounter scenarios
+    - Add "forbidden" regions to the closest list
+
+
+
 
