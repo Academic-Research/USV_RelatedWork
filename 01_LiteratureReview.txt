@@ -20,8 +20,7 @@
 - USV control is generally done through regulation of the USV heading using PID control
 - Local guidance using potential fields (good for real-time)
 
-
-* USV Desirede Features
+* USV DesiDesired Features
 - Obatacle and collision avoidance
 - Detect objects, categorize (class of obeject and vessels) them and predict velocity and position
 - Create a kwnowledge database about the world (e.g. 2 fishing vessel, 1 island, 1 continent, 2 USV, humans, ...)
@@ -114,7 +113,3 @@
         --- The resulting path will require the incorporation of dynamics to generate a viable path using Dubins, Clothoids and Pythagorean Hodograph methods for example for generation of viable smooth paths
     - decision-making module determine COLREGS encounter scenarios
     - Add "forbidden" regions to the closest list
-
-
-
-
