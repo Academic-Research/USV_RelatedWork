@@ -7,7 +7,6 @@
 --- vision
 --- potential fields
 --- Evolutionary Algorithms such as Genetic Algorithms (GAs) (Hong Qu et al., 2005) or Ant Colony Optimisation (ACO) (Zeng et al., 2009)
-<<<<<<< HEAD
 --- Virtual Field Forces (MVFFs), in addition to fuzzy expert rule based logic (Lee et al., 2004). However, the complete system incor- porates over 200 fuzzy rules and presents only single encounter scenarios.
 --- Interval Programming Benjamin2006Method (Partially COLREGS-compliant)
 --- modified A⁄ (Casalino et al., 2009)
@@ -26,7 +25,6 @@
 - Detect objects, categorize (class of obeject and vessels) them and predict velocity and position
 - Create a kwnowledge database about the world (e.g. 2 fishing vessel, 1 island, 1 continent, 2 USV, humans, ...)
 - Automatic docking and launch system
-=======
 - USV control is generally done through regulation of the USV heading using PID control
 
 * USV Desirede Features
@@ -60,7 +58,6 @@
 - Radas
 - Monocular and Stereo vision
 - 
->>>>>>> b5bb28b7496a3005f91b472429a9c528cacc84ef
 
 * USV modules
 - Guidance
