@@ -1,5 +1,7 @@
 Abdelaal2016NMPC
 
+    Very similar to Abdelaal2018Nonlinear
+
     Contribution:
     Approach:
     Comparison:
@@ -12,15 +14,38 @@ Abdelaal2016NMPC
 
 Abdelaal2018Nonlinear
 
+    Control solution without planning. Prioritize maneuvering to the starboard side when in vessel encounter.
+    How they choose the {reference trajectory}/{reference state}?
+
     Contribution:
+        * COLREGS-Compliant Nonlinear Model Predictive Control (NMPC) for position and velocity tracking of underactuated surface vessels, and collision avoidance of static and dynamic objects.
+        * Introduce the concept of integrating collision avoidance into the trajectory tracking controller, based on MPC concepts, to act as a last-line of defense for autonomous vessels.
     Approach:
+        * 3 DOF dynamic model using two control variables: surge force and yaw moment.
+        * External disturbances are cosidered as constant or slowly varying disturbances.
+        * A nonlinear disutrbance observer is used to estimate disturbances and enhance the robusteness of the controller.
+        * For collision avoidance the authors modeled time-varying contrains into the trajectory control, considering both static and dynamic obstacles.
+        * Collision avoidance constraints are added to the problem that force the vessel to deviate minimally from the defined path in case of predicting a collision while obeying some of the added to the problem that force the vessel to deviate minimally from the defined path in case of predicting a collision while obeying some of the rules of the International Regulations for Preventing Collisions at Sea (COLREGS).
+        * Obstacles are assumed to have circular shape and collision avoidance is translated into an inequality constraint, integrated into the controller design
+        * The method is validated through software simulation using MATLAB.
     Comparison:
+        * Maneurving prioritizing starboard
+        * Solution based on control using modified MPC
+        * No real-world test
+        * Assumed capability to detect and identify the velocity, course and lenght of other vessels 
+    CA:
+        * The motion prediction of encountered vessels is predicted using the constant velocity (CV) model presented in (Rong Li and Jilkov, 2003).
     Global Guidance:
     Local Guidance:
     Navigation:
-    Control:
-    COLREGS:
-    COLREGS:
+        * Assumed radar or LiDAR
+            - Position of the obstacles
+        * Assumed AIS/Approach
+            - Velocity, course, and lenght of the vessel
+    Control: NMPC
+    COLREGS: 13, 14, 15
+    COLREGS:    
+        * Prioritize to maneuvering to the starboard side ("the optimization problem will be reformulated by adding a soft constraint on the rate of change of yaw moment to prioritize the ship maneuvering to the starboard side")
 
 Agrawal2015COLREGS
 
