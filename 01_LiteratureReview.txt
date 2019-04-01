@@ -94,7 +94,6 @@
 - USV Master Plan: US Navy doc with objectives in order to increase USVs mission diversity and autonomy
 - Navigation, Guidance, Control, and Motion
 - Motion planning
-<<<<<<< HEAD
 - A recent review of close-range collision avoidance (Tam et al., 2009) gives a chronological account of approaches taken to the guidance problem and discusses related studies which tackle path planning with regard to collision avoidance. The authors did not discuss unmanned vehicles, but rather focussed on increasing the autonomy of manned craft to avoid human error during navigation when executing COLREGs.
 - 
 
@@ -140,12 +139,10 @@
 - PAD (Projected Area of Danger)
 - CA (Circle of Avoidance)
 - CSC (Critical Safety Circle)
-=======
 - A recent review of close-range collision avoidance (Tam et al., 2009) gives a chronological account of approaches ta- ken to the guidance problem and discusses related studies which tackle path planning with regard to collision avoidance. The authors did not discuss unmanned vehicles, but rather focussed on increasing the autonomy of manned craft to avoid human error during navigation when executing COLREGs.
 - 
 
 
->>>>>>> b5bb28b7496a3005f91b472429a9c528cacc84ef
 
 * COLREGS
 - Heuristics methods

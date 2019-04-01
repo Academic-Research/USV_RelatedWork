@@ -1,4 +1,4 @@
-Research String
+Search String
 
 (usv AND (guidance OR path planning OR colreg))
 ieee:           113
@@ -30,8 +30,8 @@ ieee:           20
 science direct: 45
 scopus:         26
 
-((usv OR (unmanned AND surface AND vehicle)) AND colreg) 
-ieee:           20      (18 accepted, 1 rejected, 1 not accessable)
-science direct: 57      (26 accepted, 31 rejected (6 non peer-reviwed))
-scopus:         28      ()
+((usv OR (unmanned AND surface AND vehicle)) AND colreg) - 1.April.2019
+ieee:           21      (20 accepted, 1  rejected)
+science direct: 60      (26 accepted, 33 rejected (6 non peer-reveiwed))
+scopus:         40      (26 accepted, 14 not accessable)
 
