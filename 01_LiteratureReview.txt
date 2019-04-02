@@ -50,14 +50,22 @@ Abdelaal2018Nonlinear
 Agrawal2015COLREGS
 
     Contribution:
+        * COLREGS-Compliant Target Following for an USV in Dynamic Environments
     Approach:
+        * The motion prediction for the target vessel is based on Monte-Carlo sampling of dynamically feasible and collision-free paths with fuzzy weights
+        * This prediction is continuously optimized for a particular target by learning the necessary parameters for a 3-degree-of-freedom model of the vessel and its maneuvering behavior from its path history without any prior knowledge
+        * 
     Comparison:
     Global Guidance:
+        * Path planning using grid-based map and A* with Artificial Terrain COsts for dynamically changing obstacles
     Local Guidance:
     Navigation:
     Control:
     COLREGS:
     COLREGS:
+    Validation: 
+        * Tests that simulate multiple civilian and adversarial vessels
+        * Through software simulation and rea-world tests
 
 Allen2012Seabots
 
