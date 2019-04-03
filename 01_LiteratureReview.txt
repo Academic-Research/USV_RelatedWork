@@ -49,23 +49,57 @@ Abdelaal2018Nonlinear
 
 Agrawal2015COLREGS
 
+        **** Good problem formulation ****
+        **** Good COLREGS implementation description ****
+        Target following (focusing on surveillance/env.monitoring).
+
+
     Contribution:
         * COLREGS-Compliant Target Following for an USV in Dynamic Environments
+        * 
+            (1)A single-stage, COLREGS-compliant and dynamically feasible path planner, that generates a trajectory which can be directly navigated over at nearly full surge speed, instead of navigation at lower speed to enforce COLREGS over a non-COLREGS- compliant trajectory. 
+            (2) Increasing the accuracy of the mo- tion prediction by 12% over the best of previous methods in representative dynamic obstacle scenarios without a dramatic increase in computation.
     Approach:
         * The motion prediction for the target vessel is based on Monte-Carlo sampling of dynamically feasible and collision-free paths with fuzzy weights
         * This prediction is continuously optimized for a particular target by learning the necessary parameters for a 3-degree-of-freedom model of the vessel and its maneuvering behavior from its path history without any prior knowledge
-        * 
+        * Based on (1) fully observable world in a grid representation, (2) previous and current states of USV and tearget vessel and (3) 3-DOF dynamic model of the USV.
+        * 3 Stage path definition:
+            1 motion estimation of the target vessel
+            2 identify COLREGS ocndiions that apply to the situation considering neighboring vessels
+            3 A* search
+        * CPA to determine if the USV is about to collide with another vessel
     Comparison:
     Global Guidance:
-        * Path planning using grid-based map and A* with Artificial Terrain COsts for dynamically changing obstacles
+        * M-MC
+        Path planning using grid-based map and A* with Artificial Terrain COsts for dynamically changing obstacles
+        * target following motion
     Local Guidance:
-    Navigation:
+        * COLREGS-compliant A* 
+    Navigation: compass, gps
+    Perception: LIDAR
     Control:
     COLREGS:
     COLREGS:
+        1 if dCPA_tmax < dCOLREGS: identify which scenario
+        2 Add hysteresis
+        3 if dt0 < dCRITICAL avoid without compute COLREGS strategy
+        * modification of obstace map introducing new obstacles an terrain cost
+        * fusing the COLREGS rules directly with the dy-namic A* heuristic path-planning around dynamic obstacles by imposing Artificial Terrain Costs,
     Validation: 
         * Tests that simulate multiple civilian and adversarial vessels
         * Through software simulation and rea-world tests
+        * Simulation in 15 different Environments
+            - 5 each with no obstacles, static obstacles, and dynamic obstacles
+        * Comparison with:
+            - Pure pursuit
+            - Constant Bearing
+            - Simple Monte Carlo
+            - Results in simulation show least travelled distance and travveles time and most computational time in all scenarios for the M-MC proposed method in comparison to PP, CB and MC.
+        * Field Tests:
+            - The field tests were performed on Panther Hollow Lake in Pittsburgh PA, USA
+            - 1.8m-long kayaks fitted with underwater-scooter motors on either side for propulsion, batteries, computers, compass, GPS, LIDAR scanners for obstacle detection and RF receivers for manual control
+            - 1 civil vessel
+            - distance travelled and time taken were 52.2% and 70.1% of the under PP motion-estimation
 
 Allen2012Seabots
 
@@ -288,6 +322,7 @@ Kuwata2011Safe
     Contribution:
     Approach:
     Comparison:
+        * Embora a sua implementação funcione bem para evitar obstáculos em águas abertas com muito pouca desordem, o planejamento da trajetória local usando VO sofre várias desvantagens, incluindo a falha em gerar caminhos estáveis ​​na presença de múltiplos navios e obstáculos na proximidade que esperamos encontrar em um porto, e ser restringido a uma previsão de primeira ordem do navio alvo
     Global Guidance:
     Local Guidance:
     Navigation:
@@ -561,6 +596,8 @@ Sun2018Collision
 
 Svec2013Dynamic
 
+        * Application of COLREGS rules while following a target was done by Gupta et al. [5] by using a two-stage process, generating the USV’s desired trajectory first while ignoring the civilian vessels and then implementing the COLREGS-compliant planner to adjust the surge speed and heading of the USV on the calculated trajectory
+
     Contribution:
     Approach:
     Comparison:
@@ -570,6 +607,8 @@ Svec2013Dynamic
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+        * Simulations and experiments were performed with a manually controlled target boat and a civilian boat, both broadcasting their GPS positions to the USV, along with virtual obstacles.
 
 Tan2009Review
 
