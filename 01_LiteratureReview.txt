@@ -103,7 +103,8 @@ Agrawal2015COLREGS
 
 Allen2012Seabots
 
-    Contribution:
+    **** not peer reviwed ***
+    Contribution:Generated "navsec 2011 resolution" suggestions changes to the COLREGs
     Approach:
     Comparison:
     Global Guidance:
