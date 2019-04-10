@@ -2,6 +2,23 @@
 !FULL COLREGS COMPLIANT USV
 !!!!
 
+!!!!!
+!Systematic Mapping
+!!!!!
+Verification Tools  - Marcelo
+Control             - Renan e Davi
+Method              - Darlan
+Perception          - Roger
+Navigation          - G. Heck
+Applications        - Darlan
+Benchmarks          - 
+Validation Tools    - 
+Development Tools ? -
+Formal Validation   -
+
+
+
+
 Abdelaal2016NMPC
 
     Very similar to Abdelaal2018Nonlinear
@@ -121,6 +138,7 @@ Allen2012Seabots
 Benjamin2004COLREGS
 
     Contribution:
+        1 - Detailed evaluation with USV must be compliant to COLREGS
     Approach:
     Comparison:
     Global Guidance:
