@@ -1,5 +1,6 @@
 !!!!
 !FULL COLREGS COMPLIANT USV
+    - including lights
 !!!!
 
 !!!!!
@@ -138,15 +139,58 @@ Allen2012Seabots
 Benjamin2004COLREGS
 
     Contribution:
-        1 - Detailed evaluation with USV must be compliant to COLREGS
+        1 - Detailed Discussion about the appliance of COLREGS to USVs and overview of the "COLREGS project", showing simulation and field test modelling.
+        2 - Detailed evaluation why USV must be compliant to COLREGS
+            2.1 - Discuss the fact that the COLREGS were written for humans and the problems related to this fact
+                2.1.1 COLREGS 14
+                    * The rule states that course io the starboard is required, but does not specify the angle or ultimate clearance distance required between the two vessels.
+        3 - Behavior-based control for integration of COLREGS-compliant collision avoidance and mission accomplishment.
+
     Approach:
+        1 - Multi-objective optmization, interval programming to coordinate behavior.
+        2 - Each of the COLREGS rules is captured in a distinct behavior that may or may not be influencing the overall control of the vehicle at any given moment.
+        3 - The output of each behavior is an objective function that rates all possible actions with respect to the corresponding COLREGS rule.
     Comparison:
+        1 - Shallow modelling and presentation of Results
+        2 - pioneer
+        3 - similar strategy (shortest-path algorithm)
+        4 - Do not explore the combination of global and local guidance
+        5 - Maybe similar simulation in the aspect of use perfect information about USV's position and other vessels/obstacles's position and trajectory
     Global Guidance:
+        1 - For global guidance they use a behavior-based approach, considering mission and COLREGS obsjectives to perform the coordination of the USV.
+        The output of each behavior is an obejective function that rates all possible actions with respect to the corresponding COLREGS. So, they use interval programming to solve the multi-objective optimization problem.
+        2 - The COLREGS behaviors rate possible vehicle actions in a decision space defined by the decision variables course, speed, and intended-time.
+        3 - A shortest-path algorithm is run.
     Local Guidance:
     Navigation:
+        1 -  The vehicle is given a commercially available bathymetry map which, in effect, defines its free space.
+        2 - Real boat:
+            1 - GPS
+            2 - compass
+            3 - Linux, Mission Orieted Operating simulate
+            4 - libs and apps written in GNU C++
+        
     Control:
     COLREGS:
+        1 - Different behaviors and actions for each CORLEGS rule.
     COLREGS:
+        1 - 14 - Head-On, 16 - Give-Way Vessel, 
+    Validation:
+        0 - Tracking through passive or active sensors is outside the current project scope.
+        1 - Simulation:
+            1 - In simulation, the controlled vehicle knows its own position perfectly, as well as the position and trajectory of all other moving vessels.
+            2 - In simulation presented the behavior related to the head-on situation.
+        2 - Field Tests:
+            1 - In the in-water experiments, the vehicle knows its own position from GPS, and each vehicle broadcasts its GPS position to each other.
+            2 - 4 10-foot kayaks
+            3 - on-board computers
+            4 - 
+
+
+
+        
+
+        
 
 Benjamin2006Navigation
 
