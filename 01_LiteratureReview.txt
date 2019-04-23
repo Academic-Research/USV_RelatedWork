@@ -266,15 +266,31 @@ Campbell2012Rule
 
 Candeloro2017Voronoi
 
-    Contribution:
-    Approach:
+    Contribution: 
+        Global and Local guidance. 
+        Smooth-paths.
+        COLREGS-Compliant
+    Approach: 
+        Voronoi diagram, 
+        Curvature-continuous path connecting straight lines using Fermat's Spiral segments
     Comparison:
+        Different path planning
+        Very complete and optimized (smooth path and remotion of unnecessary waypoints)
     Global Guidance:
+        Dijkstra-Yan
     Local Guidance:
+        Replanning after obstacle detection
     Navigation:
-    Control:
+    Control: Yes
     COLREGS:
+        CPA Kuwata2014
+        POA Projected Obstacle Area Larson2007
     COLREGS:
+        14, 15
+    Validation: Through software simulation
+
+    Contribution: Implementation Metric, Architecture Model, Implementation Method, Architecture Process, Implementation Validation, Implementation Validation, Arch Validation???
+    Research: Solution, Validation, Evaluation
 
 Cho2018Intent
 
