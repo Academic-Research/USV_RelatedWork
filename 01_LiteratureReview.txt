@@ -536,14 +536,24 @@ Naeem2011Evasive
 Naeem2012COLREGS
 
     Contribution:
-    Approach:
-    Comparison:
-    Global Guidance:
-    Local Guidance:
-    Navigation:
-    Control:
-    COLREGS:
-    COLREGS:
+        Integration of 
+            A*-based algorithm (DPSS) - Yang2010Efficient - for global guidance 
+            LOS - Healey1993Multivariable - for local guidance and
+            Manual biasing scheme (avoid vessels going to th starboard side) for COLREGS compliance.
+
+    Approach:           Integrate known methods for path planning to the context of USVs and try to mimic human decision for COLREGS compliance, always manouvering to starboard side to avoid dynamic obstacles.
+    Comparison:         
+    Global Guidance:    A*-based algorithm (DPSS)   - Deliberative Planning
+    Local Guidance:     LOS                         - Reactive Planning
+    Navigation:         COA
+    Control:            PID 
+    COLREGS:            Manual biasing scheme       - Re-planning
+    COLREGS:            
+    Validation:         Software simulations.
+
+    Contribution:       Arch model, Impl model
+    Research:           Solution, Validation 
+
 
 Naeem2016Reactive
 
