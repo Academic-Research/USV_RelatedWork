@@ -474,16 +474,25 @@ Kuwata2014Safe
 
 Lazarowska2017New
 
+    Lazarowska presents a colregs-compliant Decision Support System, capable to avoid static and dynamics obstacles.
+    O sistema apresentado é um advisory system, ou seja ele possui a tarefa de sugerir ao navigator trajetorias que evitem colisao, e entao o navigator opta por utilizar da sugestao ou nao.
+    A definição da trajetoria é realizada utilizando uma base de dados com várias trajetorias que possivelmente solucionam o problema.
+    As trajetorias possiveis sao ordenadas em funcção do seu comprimento, do menor para o maior comprimento.
+    Obstaculos dinamicos tem tambem as suas trajetorias projetadas e entao o algoritmo de escolha de trajetorias para o USV avalia, a partir da rota de menor comprimento, se está possui colisao com a rota prevista para algum dos obstaculos dinamicos. Em caso de haver colisao, a trajetoria para o USV é rejeitada.
+    
+    He argues that the system is capable of make a decision similar to human experts.
+    A strong assumption was done is this work, the mainttence of ships motion parameters.
+
     Contribution:
     Approach:
     Comparison:
-    Global Guidance:
+    Global Guidance: Path planning: Trajectory Base Algorithm.
     Local Guidance:
     Navigation:
     Control:
     COLREGS:
     COLREGS:
-    Validation:
+    Validation: Software simulation.
     SystematicMapping:
 
 Liu2016Unmanned
