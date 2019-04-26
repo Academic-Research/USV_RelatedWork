@@ -203,6 +203,8 @@ Benjamin2006Navigation
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Bertaska2015Experimental
 
@@ -215,6 +217,8 @@ Bertaska2015Experimental
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Beser2018COLREGS
 
@@ -227,6 +231,8 @@ Beser2018COLREGS
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Bibuli2014Collision
 
@@ -239,6 +245,8 @@ Bibuli2014Collision
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Campbell2012Review
 
@@ -251,6 +259,8 @@ Campbell2012Review
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Campbell2012Rule
 
@@ -263,6 +273,8 @@ Campbell2012Rule
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Candeloro2017Voronoi
 
@@ -303,18 +315,35 @@ Cho2018Intent
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Dreany2018Safety
 
+    Brief: 
+        Apresenta um sistema para medir e avaliar a performance de seguraça de um sistema COLREGS-compliant para USV.
+        Tolerancias de segurança baseadas no International Code of Safety for High-Speed Craft (2000)-2008
+        Apresenta metricas de segurança
+
     Contribution:
+        modelos, metodos e metricas para avaliar safety de COLREGS-compliant USV system
     Approach:
     Comparison:
-    Global Guidance:
-    Local Guidance:
+    Global Guidance: A* and D*
+    Local Guidance: algum negocio com potencial eletrico mas nao muito claro
     Navigation:
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+        Experiments in a real-world environment, USVs controlled by humans and AI
+        Experiments in a simulated environment, USVs controlled by humans and AI
+    SystematicMapping:
+        Utiliza ou cria o processo de V&V?
+        {Metricas, modeleos, metodos} de verificacao e validacao
+        experience, solution, validation, evaluation
+        Validatino with experts humans
+        
 
 Du2019Trajectory
 
@@ -327,6 +356,8 @@ Du2019Trajectory
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Gongxing2016Deliberative
 
@@ -339,6 +370,8 @@ Gongxing2016Deliberative
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 He2017Quantitative
 
@@ -351,6 +384,8 @@ He2017Quantitative
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Hu2017COLREGS
 
@@ -363,6 +398,8 @@ Hu2017COLREGS
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Huang2019Generalized
 
@@ -375,6 +412,8 @@ Huang2019Generalized
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Johansen2016Ship
 
@@ -387,6 +426,8 @@ Johansen2016Ship
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Johansen2016Unmanned
 
@@ -399,6 +440,8 @@ Johansen2016Unmanned
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Kuwata2011Safe
 
@@ -412,6 +455,8 @@ Kuwata2011Safe
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Kuwata2014Safe
 
@@ -424,6 +469,8 @@ Kuwata2014Safe
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Lazarowska2017New
 
@@ -436,6 +483,8 @@ Lazarowska2017New
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Liu2016Unmanned
 
@@ -448,6 +497,8 @@ Liu2016Unmanned
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Liu2018Efficient
 
@@ -460,6 +511,8 @@ Liu2018Efficient
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Lu2016Verifying
 
@@ -472,6 +525,8 @@ Lu2016Verifying
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Lyu2017Ship
 
@@ -484,6 +539,8 @@ Lyu2017Ship
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Lyu2018Fast
 
@@ -496,6 +553,8 @@ Lyu2018Fast
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Moe2017Set_A
 
@@ -508,6 +567,8 @@ Moe2017Set_A
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Moe2017Set_B
 
@@ -520,6 +581,8 @@ Moe2017Set_B
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Naeem2011Evasive
 
@@ -532,6 +595,8 @@ Naeem2011Evasive
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Naeem2012COLREGS
 
@@ -554,7 +619,6 @@ Naeem2012COLREGS
     Contribution:       Arch model, Impl model
     Research:           Solution, Validation 
 
-
 Naeem2016Reactive
 
     Contribution:
@@ -566,6 +630,8 @@ Naeem2016Reactive
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Niu2017USV
 
@@ -578,6 +644,8 @@ Niu2017USV
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Park2016Probabilistic
 
@@ -590,6 +658,8 @@ Park2016Probabilistic
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Savvaris2014Development
 
@@ -602,6 +672,8 @@ Savvaris2014Development
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Shah2014Trajectory
 
@@ -614,6 +686,8 @@ Shah2014Trajectory
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Singh2018Constrained
 
@@ -626,6 +700,8 @@ Singh2018Constrained
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Sinisterra2017USV
 
@@ -638,6 +714,8 @@ Sinisterra2017USV
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Son2018Sea
 
@@ -650,6 +728,8 @@ Son2018Sea
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Song2017Multi
 
@@ -662,6 +742,8 @@ Song2017Multi
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Song2018Two
 
@@ -674,6 +756,8 @@ Song2018Two
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Sun2018Collision
 
@@ -686,6 +770,8 @@ Sun2018Collision
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Svec2013Dynamic
 
@@ -701,6 +787,8 @@ Svec2013Dynamic
     COLREGS:
     COLREGS:
     Validation:
+    SystematicMapping:
+    Validation:
         * Simulations and experiments were performed with a manually controlled target boat and a civilian boat, both broadcasting their GPS positions to the USV, along with virtual obstacles.
 
 Tan2009Review
@@ -714,6 +802,8 @@ Tan2009Review
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Tran2018Potential
 
@@ -726,6 +816,8 @@ Tran2018Potential
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Wang2018COLREGS
 
@@ -738,6 +830,8 @@ Wang2018COLREGS
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Wang2019Collision
 
@@ -750,6 +844,8 @@ Wang2019Collision
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Xinchi2018Research
 
@@ -762,6 +858,8 @@ Xinchi2018Research
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Xu2017Deep
 
@@ -774,6 +872,8 @@ Xu2017Deep
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Zhang2018Novel
 
@@ -786,6 +886,8 @@ Zhang2018Novel
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Zhao2016Real
 
@@ -798,6 +900,8 @@ Zhao2016Real
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
 
 Zhuang2011Motion
 
@@ -810,3 +914,5 @@ Zhuang2011Motion
     Control:
     COLREGS:
     COLREGS:
+    Validation:
+    SystematicMapping:
