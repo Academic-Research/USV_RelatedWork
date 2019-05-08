@@ -205,6 +205,7 @@ Benjamin2006Navigation
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Bertaska2015Experimental
 
@@ -219,6 +220,7 @@ Bertaska2015Experimental
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Beser2018COLREGS
 
@@ -233,6 +235,7 @@ Beser2018COLREGS
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Bibuli2014Collision
 
@@ -247,6 +250,7 @@ Bibuli2014Collision
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Campbell2012Review
 
@@ -261,6 +265,7 @@ Campbell2012Review
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Campbell2012Rule
 
@@ -275,6 +280,7 @@ Campbell2012Rule
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Candeloro2017Voronoi
 
@@ -317,6 +323,7 @@ Cho2018Intent
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Dreany2018Safety
 
@@ -343,6 +350,7 @@ Dreany2018Safety
         {Metricas, modeleos, metodos} de verificacao e validacao
         experience, solution, validation, evaluation
         Validatino with experts humans
+    Limitation:
         
 
 Du2019Trajectory
@@ -358,6 +366,7 @@ Du2019Trajectory
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Gongxing2016Deliberative
 
@@ -372,6 +381,7 @@ Gongxing2016Deliberative
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 He2017Quantitative
 
@@ -386,6 +396,7 @@ He2017Quantitative
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Hu2017COLREGS
 
@@ -400,6 +411,7 @@ Hu2017COLREGS
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Huang2019Generalized
 
@@ -414,6 +426,7 @@ Huang2019Generalized
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Johansen2016Ship
 
@@ -428,6 +441,7 @@ Johansen2016Ship
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Johansen2016Unmanned
 
@@ -442,6 +456,7 @@ Johansen2016Unmanned
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Kuwata2011Safe
 
@@ -457,6 +472,7 @@ Kuwata2011Safe
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Kuwata2014Safe
 
@@ -471,6 +487,7 @@ Kuwata2014Safe
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Lazarowska2017New
 
@@ -486,14 +503,17 @@ Lazarowska2017New
     Contribution:
     Approach:
     Comparison:
+        Validacao somente em software. 
+        Considera que a trajetoria realizada por obstaculos dinamicos ocorre somente em linha reta e utiliza essa projecao para escolha da trajetoria do USV que esta sendo guiado.
     Global Guidance: Path planning: Trajectory Base Algorithm.
     Local Guidance:
     Navigation:
     Control:
-    COLREGS:
+    COLREGS: Not clear defined. (Text in page 473)
     COLREGS:
     Validation: Software simulation.
-    SystematicMapping:
+    SystematicMapping:  Implementation Method 
+    Limitation: A principal limitação está relacionada com projeção de que as trajetorias de obstaculos dinamicos ocorrem em linha reta
 
 Liu2016Unmanned
 
@@ -508,6 +528,7 @@ Liu2016Unmanned
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Liu2018Efficient
 
@@ -522,6 +543,7 @@ Liu2018Efficient
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Lu2016Verifying
 
@@ -536,6 +558,7 @@ Lu2016Verifying
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Lyu2017Ship
 
@@ -550,6 +573,7 @@ Lyu2017Ship
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Lyu2018Fast
 
@@ -564,6 +588,7 @@ Lyu2018Fast
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Moe2017Set_A
 
@@ -578,6 +603,7 @@ Moe2017Set_A
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Moe2017Set_B
 
@@ -592,6 +618,7 @@ Moe2017Set_B
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Naeem2011Evasive
 
@@ -606,6 +633,7 @@ Naeem2011Evasive
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Naeem2012COLREGS
 
@@ -641,6 +669,7 @@ Naeem2016Reactive
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Niu2017USV
 
@@ -655,6 +684,7 @@ Niu2017USV
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Park2016Probabilistic
 
@@ -669,6 +699,7 @@ Park2016Probabilistic
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Savvaris2014Development
 
@@ -683,6 +714,7 @@ Savvaris2014Development
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Shah2014Trajectory
 
@@ -697,6 +729,7 @@ Shah2014Trajectory
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Singh2018Constrained
 
@@ -711,6 +744,7 @@ Singh2018Constrained
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Sinisterra2017USV
 
@@ -725,6 +759,7 @@ Sinisterra2017USV
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Son2018Sea
 
@@ -739,6 +774,7 @@ Son2018Sea
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Song2017Multi
 
@@ -753,6 +789,7 @@ Song2017Multi
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Song2018Two
 
@@ -767,6 +804,7 @@ Song2018Two
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Sun2018Collision
 
@@ -781,6 +819,7 @@ Sun2018Collision
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Svec2013Dynamic
 
@@ -797,6 +836,7 @@ Svec2013Dynamic
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
     Validation:
         * Simulations and experiments were performed with a manually controlled target boat and a civilian boat, both broadcasting their GPS positions to the USV, along with virtual obstacles.
 
@@ -813,6 +853,7 @@ Tan2009Review
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Tran2018Potential
 
@@ -827,6 +868,7 @@ Tran2018Potential
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Wang2018COLREGS
 
@@ -841,6 +883,7 @@ Wang2018COLREGS
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Wang2019Collision
 
@@ -855,6 +898,7 @@ Wang2019Collision
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Xinchi2018Research
 
@@ -869,6 +913,7 @@ Xinchi2018Research
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Xu2017Deep
 
@@ -883,6 +928,7 @@ Xu2017Deep
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Zhang2018Novel
 
@@ -897,6 +943,7 @@ Zhang2018Novel
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Zhao2016Real
 
@@ -911,6 +958,7 @@ Zhao2016Real
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
 
 Zhuang2011Motion
 
@@ -925,3 +973,4 @@ Zhuang2011Motion
     COLREGS:
     Validation:
     SystematicMapping:
+    Limitation:
