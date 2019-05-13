@@ -509,11 +509,21 @@ Lazarowska2017New
     Local Guidance:
     Navigation:
     Control:
-    COLREGS: Not clear defined. (Text in page 473)
+    COLREGS: 
+        Based on a database of predefined trajectories, the algorithm choose the shortest. 
+        !!!Its not clearly defined the guarantees of COLREGS compliance.!!!  Looks like Ad Hoc.
+        Its shown a example of generation of 35 trajectories that could possible avoid obstacle going to starboard side.
     COLREGS:
     Validation: Software simulation.
-    SystematicMapping:  Implementation Method 
-    Limitation: A principal limitação está relacionada com projeção de que as trajetorias de obstaculos dinamicos ocorrem em linha reta
+    SystematicMapping:  
+        Implementation Method. 
+        Functionality (sounds like a product): shortest trajectory, the trajectory with the shortest time of pas- sage, the trajectory with the smallest turning angles or maybe a compromise between the different criteria
+        COLREGS-compliant trajectories database
+
+    Limitation: 
+        Projeção de que as trajetorias de obstaculos dinamicos ocorrem em linha reta
+        encountered ships motion parameters are assumed not to change during problem solving
+
 
 Liu2016Unmanned
 
