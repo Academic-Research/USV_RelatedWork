@@ -33,6 +33,17 @@
 - Create a kwnowledge database about the world (e.g. 2 fishing vessel, 1 iland, 1 continent, 2 USV, humans, ...)
 - Automatic docking and launch system
 
+* Path Planning
+- Route Planning
+    -- pure geometric issue; 
+    -- planning shortest or safest path;
+    -- mass point with no kinematic and dynamic characteristics.
+- Trajectory Planning
+    -- Optimization issue;
+    -- kinematics constrains are considered, such as speed, heading and curvature
+- Motion Planning
+    -- control issue;
+
 * USV modules
 - Guidance
 --- Map representation

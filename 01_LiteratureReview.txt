@@ -187,11 +187,6 @@ Benjamin2004COLREGS
             4 - 
 
 
-
-        
-
-        
-
 Benjamin2006Navigation
 
     Contribution:
@@ -254,7 +249,13 @@ Bibuli2014Collision
 
 Campbell2012Review
 
-    Contribution:
+    Tan2009Review foca em como inteligencia artificial é capaz de auxiliar no guidance de embarcações tripuladas, nao abrange muito embarcações nao tripuladas que compoe o core da categoria USV.
+
+    Campbell2012Review discute trabalhos que especificamente tratam de guidance navigation and control para USVs. 
+
+    Liu2016Unmanned ...
+
+    Contribution: Literature Review
     Approach:
     Comparison:
     Global Guidance:
@@ -270,13 +271,15 @@ Campbell2012Review
 Campbell2012Rule
 
     Contribution:
-    Approach:
+        A A* modificated method called Rule-based Repairing A* (R-RA*) for COLREGs-compliant collision avoidance.
+    Approach: 
+        Based on approaching vessels estimated states and the encounter type, the R-RA* algorithm determine areas of the map that should be discarded by the path planner for COLREGS-compliince. This is done adding to the closed list the discared region.
     Comparison:
     Global Guidance:
     Local Guidance:
-    Navigation:
+    Navigation: Laser, AIS. Obstacles detection (speed, accel, heading, size, type)
     Control:
-    COLREGS:
+    COLREGS: CPA, 
     COLREGS:
     Validation:
     SystematicMapping:
@@ -355,16 +358,16 @@ Dreany2018Safety
 
 Du2019Trajectory
 
-    Contribution:
-    Approach:
+    Contribution: Trajectory-cell method
+    Approach: ombination of trajectory-cell method and search algorithm
     Comparison:
     Global Guidance:
     Local Guidance:
     Navigation:
     Control:
+    COLREGS: NO COLREGS TREATMENT
     COLREGS:
-    COLREGS:
-    Validation:
+    Validation: Simulation and Field Test
     SystematicMapping:
     Limitation:
 
@@ -415,16 +418,22 @@ Hu2017COLREGS
 
 Huang2019Generalized
 
-    Contribution:
-    Approach:
+    Recently, some improvements have been made considering multi-ships dynamics. For example, Huang et al. present multiship collision avoidance systems using an extension of the Velocity Obstacle algorithm, namely Generalized Velocity Obstacle, for local planning. 
+    Through software simulation, it is proved that the system is capable of avoiding multiple risk encounters with other vessels considering changes on course and speed and attending COLREGS when possible. For COLREGS-compliance, the system uses hard-port turn decision. Moreover, the authors argue that the system suitable for both autonomous and officer support.
+
+    Contribution:   Generalized Velocity Obstacle algorithm for collision avoidance. 
+                    Can be used to support collision prevention with multiple dynamic obstacles in close range.
+    Approach:       Local Collision Avoidance System consider change of ships course and speed. For both autonomous and                 officer support, and manned and unmanned vessels.
+                    The algorithms collect all the velo- cities that result in collisions and present a set of collision-free velocities for human/machine, which facilitates human/machine to search for the best option.
+                    This article aims at finding a suitable VO algorithm which discards the holonomic assumption and is capable to handle the ship's dynamics
     Comparison:
     Global Guidance:
-    Local Guidance:
+    Local Guidance: Generalized Velocity Obstacle
     Navigation:
     Control:
-    COLREGS:
-    COLREGS:
-    Validation:
+    COLREGS: 8, 14, 15, 17
+    COLREGS: hard-port turn.
+    Validation: Software simulation
     SystematicMapping:
     Limitation:
 
@@ -981,6 +990,6 @@ Zhuang2011Motion
     Control:
     COLREGS:
     COLREGS:
-    Validation:
+    Validation: 
     SystematicMapping:
     Limitation:
